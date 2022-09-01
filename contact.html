@@ -69,7 +69,67 @@
     </header>
 
     <!-- main -->
-    <main id="" class="container-fluid py-4">
+    <main id="contact" class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-11">
+                <h2 class="py-4 text-center ff-mpr fs-1">Contact</h2>
+                <p class="text-center text-primary ff-mpr fs-6"><i class="fas fa-check"></i> Typically, I reply to within a day</p>
+                <!-- 簡易説明ブロック -->
+                <div class="alert alert-info" role="alert">
+                    <p class="mb-0 ff-mpr fs-6">Thank you for your interest.</p>
+                    <p class="mb-0 ff-mpr fs-6">Please fill in the form below and send it after paying attention to the following points.</p>
+                    <br />
+                    <p class="mb-0 ff-mpr fs-6">・The information you enter will not be used for any other purpose.</p>
+                    <p class="mb-0 ff-mpr fs-6">・Please check the information you have entered before sending.</p>
+                    <p class="mb-0 ff-mpr fs-6">・If you cannot send the form below, please contact me at "gucciyanen04@gmail.com".</p>
+                    <br />
+                    <p class="mb-0 ff-mpr fs-6">Please feel free to contact me after confirming the above.</p>
+                </div>
+                <!-- フォーム -->
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-6 py-2">
+                        <label for="contact-last-name" class="form-label ff-mpr required">Lastname</label>
+                        <input type="text" class="form-control" id="contact-last-name" required />
+                        <small class="ff-mpr error-msg-color contact-last-name"></small>
+                    </div>
+                    <div class="col-md-6 py-2">
+                        <label for="contact-first-name" class="form-label ff-mpr required">Firstname</label>
+                        <input type="text" class="form-control" id="contact-first-name" required />
+                        <small class="ff-mpr error-msg-color contact-first-name"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-email" class="form-label ff-mpr required">Email</label>
+                        <input type="email" class="form-control" id="contact-email" required />
+                        <small class="ff-mpr error-msg-color contact-email"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-company-name" class="form-label ff-mpr">Company</label>
+                        <input type="text" class="form-control" id="contact-company-name" />
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-reason" class="form-label ff-mpr required">Reason</label>
+                        <select class="form-select" id="contact-reason" aria-label=".form-select" required>
+                            <option value="0" selected>Select</option>
+                            <option value="1">Project request/consultation</option>
+                            <option value="2">Referral job change consultation</option>
+                            <option value="3">Request to join the development team</option>
+                            <option value="4">Other</option>
+                        </select>
+                        <small class="ff-mpr error-msg-color contact-reason"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-detail" class="form-label ff-mpr required">Detail</label>
+                        <textarea rows="10" class="form-control" id="contact-detail" required></textarea>
+                        <small class="ff-mpr" id="detail-count">0/1000</small>
+                        <br />
+                        <small class="ff-mpr error-msg-color contact-detail"></small>
+                    </div>
+                    <div class="d-grid gap-2 py-3">
+                        <button type="submit" class="btn btn-info" id="contactSubmit" value="lang=en">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- ソーシャルアイコンの固定バー -->
